@@ -9,8 +9,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'whoami'
-                sh 'sudo npm install -g @angular/cli'
+                sh 'npm install'
+                sh 'npm install -g @angular/cli'
                 sh 'ng build'
             }
         }
