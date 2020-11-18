@@ -53,6 +53,10 @@ hr {
     background-color: $white;
 }
 
+a {
+    text-decoration: none;
+}
+
 // Session
 .sidebar-session {
     display : flex;
@@ -109,6 +113,7 @@ hr {
 
         height: 56px;
         margin: 0;
+        
 
         img {
             margin-left: 12px;
