@@ -6,7 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
+
   @Input() items: Object;
+  @Input() currentDate : string = new Date().toDateString();
 
 
   constructor() { 
