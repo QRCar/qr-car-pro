@@ -1,6 +1,9 @@
 @import '~src/variables';
 .content-table {
+
   .fill-table {
+  margin: 20px 0;
+
     p {
       margin: 0 30px;
     }
@@ -12,7 +15,7 @@
   }
 
   table {
-    padding: 30px;
+    // padding: 30px;
 
     td {
       width: auto;
@@ -27,6 +30,11 @@
         padding: 10px 90px;
         font-size: 18px;
         font-weight: bold;
+      }
+
+      &:nth-child(3){
+        border : 1px solid $darkgrey;
+        border-radius: 6px;
       }
     }
   }
