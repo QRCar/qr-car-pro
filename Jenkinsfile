@@ -10,6 +10,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'npm i @angular/cli'
+                sh 'npm fund'
                 sh 'ng build'
             }
         }
