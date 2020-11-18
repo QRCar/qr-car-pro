@@ -1,3 +1,15 @@
-<div>
-  <app-sidebar></app-sidebar>
+<div class="container-home flex-row">
+  <div>    
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="content">
+    <canvas baseChart 
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [options]="barChartOptions"
+    [plugins]="barChartPlugins"
+    [legend]="barChartLegend"
+    [chartType]="barChartType">
+  </canvas>
+  </div>
 </div>
