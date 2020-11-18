@@ -8,6 +8,9 @@
     min-height: 100vh;
     height: auto;
     background-color: $lightpurple;
+    position: fixed;
+    top: 0;
+    left: 0;
 
     .sidebar-logo {
         display : flex;
