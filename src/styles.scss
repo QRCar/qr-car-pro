@@ -1,9 +1,8 @@
-@import "~src/variables";
+@import '~src/variables';
 
 @font-face {
-  font-family: "Roboto";
-  src: local("Roboto"),
-    url(./assets/fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+  font-family: 'Roboto';
+  src: local('Roboto'), url(./assets/fonts/Roboto/Roboto-Medium.ttf) format('truetype');
 }
 
 :host {
@@ -14,7 +13,7 @@
 }
 
 body {
-  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
 h1,
@@ -55,7 +54,7 @@ button {
   border: none;
   outline: inherit;
   cursor: pointer;
-  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
   background-color: $lightpurple;
 
   &:hover {
