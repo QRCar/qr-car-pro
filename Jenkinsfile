@@ -9,21 +9,21 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'npm install -g @angular/cli'
+                sh 'npm install @angular/cli'
                 sh 'npm fund'
-                sh 'ng build'
+                sh 'npx ng build'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh 'ng test'
+                sh 'npx ng test'
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh 'ng serve'
+                sh 'npx ng serve'
             }
         }
     }
