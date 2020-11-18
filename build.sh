@@ -1,2 +1,2 @@
 #!/bin/sh
-npx ng serve --host 0.0.0.0 --watch=false
+setsid npx ng serve --host 0.0.0.0 >& /dev/null &
