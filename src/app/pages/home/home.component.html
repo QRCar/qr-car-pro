@@ -3,13 +3,35 @@
     <app-sidebar></app-sidebar>
   </div>
   <div class="content">
-    <canvas baseChart 
-    [datasets]="barChartData"
-    [labels]="barChartLabels"
-    [options]="barChartOptions"
-    [plugins]="barChartPlugins"
-    [legend]="barChartLegend"
-    [chartType]="barChartType">
-  </canvas>
+    <div class="dashboard-row">
+      <div class="dashboard-cell">
+
+      </div>
+      <div class="dashboard-cell">
+
+      </div>
+      <div class="dashboard-cell">
+
+      </div>
+    </div>
+    <div class="dashboard-row">
+      <div class="dashboard-cell">
+        <canvas baseChart 
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [plugins]="barChartPlugins"
+          [legend]="barChartLegend"
+          [chartType]="barChartType">
+        </canvas>
+      </div>
+    </div>
+    <div class="dashboard-row">
+      <div class="dashboard-cell">
+
+      </div>
+    </div>
+
+    
   </div>
 </div>
