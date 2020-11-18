@@ -1,1 +1,84 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~src/variables";
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url(./assets/fonts/Roboto/Roboto-Medium.ttf) format("truetype");
+}
+
+:host {
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  font-size: 12px;
+  margin: 0;
+}
+
+input {
+  font-size: 12px;
+}
+
+.link {
+  color: $lightpurple;
+  text-decoration: none;
+
+  &:hover {
+    color: $darkgrey;
+  }
+}
+
+button {
+  width: 120px;
+  height: 30px;
+  font-size: 14px;
+  padding: 5px;
+  color: $white;
+  background-color: $lightpurple;
+  border-radius: 20px;
+  border: none;
+  outline: inherit;
+  cursor: pointer;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  background-color: $lightpurple;
+
+  &:hover {
+    background-color: $darkgrey !important;
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

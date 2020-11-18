@@ -3,10 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/authentication/login/login.component';
+import { FormConnectionComponent } from './components/form-connection/form-connection.component';
+import { HistoryTransactionComponent } from './pages/history-transaction/history-transaction.component';
+import { HeaderComponent } from './components/header/header.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { AmountTotalComponent } from './components/amount-total/amount-total.component';
+import { TableComponent } from './components/table/table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    FormConnectionComponent,
+    HistoryTransactionComponent,
+    HeaderComponent,
+    SidebarComponent,
+    AmountTotalComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
