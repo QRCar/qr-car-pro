@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AmountTotalComponent } from './components/amount-total/amount-total.component';
 import { TableComponent } from './components/table/table.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TableComponent } from './components/table/table.component';
     HeaderComponent,
     SidebarComponent,
     AmountTotalComponent,
-    TableComponent
+    TableComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
