@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TRANSACTIONS} from '../../datas/mock_transactions'
 
 @Component({
   selector: 'app-history-transaction',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HistoryTransactionComponent implements OnInit {
 
+  transactions = TRANSACTIONS;
+
   constructor() { }
+
 
   ngOnInit(): void {
   }
