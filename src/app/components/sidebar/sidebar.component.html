@@ -7,23 +7,20 @@
         <div> <!-- contenu aligné en haut -->
             <div class="sidebar-session"> <!-- session -->
                 <div class="sidebar-user"> <!-- utilisateur -->
-                    <!-- icone -->
-                    <img src="../assets/img/icon-user.png" alt="User" class="sidebar-usericon"/>
+                    <img src="../assets/img/icon-user.png" alt="User" class="sidebar-user-icon"/><!-- icone -->
                     <div class="sidebar-username"><!-- nom -->
                         <p>STRABACH</p>
                         <p>Benjamin</p>
                     </div>
                 </div>
-                <!-- organisation -->
-                <div class="sidebar-organization">
+                <div class="sidebar-organization"><!-- organisation -->
                     <p>Organisation EPSI Nantes</p>
                 </div>
             </div>
 
             <hr>
             
-            <div class="sidebar-mainmenu"> <!-- menu principal -->
-                <!-- component menu -->
+            <div class="sidebar-main-menu"> <!-- menu principal -->
                 <app-menu></app-menu>
             </div>
         </div>
@@ -31,12 +28,12 @@
         <div> <!-- contenu aligné en bas -->
             <hr> <!-- séparation -->
 
-            <div class="sidebar-bottommenu"> <!-- déconnexion -->
-                <!-- component menu juste avec déconnexion -->
-                <app-menu></app-menu>
+            <div class="sidebar-bottom-menu"> <!-- déconnexion -->
+                <div class="sidebar-disconnect">
+                    <img src="../assets/img/icon-logout.png" alt="icon" class="sidebar-disconnect-icon"/>
+                    <p>Déconnexion</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-<p>sidebar works!</p>
