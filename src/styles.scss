@@ -78,6 +78,11 @@ button {
   align-items: center;
 }
 
+.flex-row {
+  display: flex;
+  flex-wrap: row nowrap;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
