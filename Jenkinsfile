@@ -17,7 +17,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh 'npx ng test'
+#                sh 'npx ng test'
             }
         }
         stage('Deploy') {
