@@ -9,6 +9,10 @@ import {TRANSACTIONS} from '../../datas/mock_transactions'
 export class HistoryTransactionComponent implements OnInit {
 
   transactions = TRANSACTIONS;
+  currentDate: string = "Aujourd'hui";
+  currentDate2: string = "Hier";
+  currentDate3: string = "13 novembre";
+  currentDate4: string = "14 novembre";
 
   constructor() { }
 

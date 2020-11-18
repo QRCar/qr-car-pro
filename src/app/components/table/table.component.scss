@@ -1,11 +1,33 @@
-table {
-  td {
-    width: auto;
-    padding: 10px 35px;
+@import '~src/variables';
+.content-table {
+  .fill-table {
+    p {
+      margin: 0 30px;
+    }
+    hr {
+      width: 60vw;
+      margin-left: 10px;
+      border: 1px solid $lightgrey;
+    }
   }
-  td:last-child {
-    padding: 10px 60px;
-    font-size: 18px;
-    font-weight: bold;
+
+  table {
+    padding: 30px;
+
+    td {
+      width: auto;
+      padding: 10px 35px;
+
+      &:first-child {
+        color: $lightgrey;
+      }
+
+      &:last-child {
+        text-align: right;
+        padding: 10px 90px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
   }
 }
