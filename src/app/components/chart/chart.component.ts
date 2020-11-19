@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
+import { ChartOptions, ChartType, ChartDataSets, ChartColor } from 'chart.js';
 import { Label } from 'ng2-charts';
 
 @Component({
@@ -17,6 +17,7 @@ export class ChartComponent implements OnInit {
   public barChartType: ChartType = 'bar';
   public barChartLegend = false;
   public barChartPlugins = [];
+  // public barChartColor: ChartColor = 
 
   public barChartData: ChartDataSets[] = [
     { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' }
