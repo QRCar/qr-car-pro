@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {TRANSACTIONS} from '../../datas/mock_transactions'
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-history-transaction',
@@ -14,10 +15,17 @@ export class HistoryTransactionComponent implements OnInit {
   currentDate3: string = "13 novembre";
   currentDate4: string = "14 novembre";
 
-  constructor() { }
+  constructor(private router : Router) { }
+
+  user : any;
 
 
   ngOnInit(): void {
+    if (localStorage.getItem('userInfo') == null){
+      this.router.navigate(['/login']);
+    } else {
+      this.user = JSON.parse(localStorage.getItem('userInfo'));
+    }
   }
 
 }
