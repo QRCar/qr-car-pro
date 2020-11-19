@@ -15,6 +15,8 @@ import { TableComponent } from './components/table/table.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { RegisterComponent } from './pages/authentication/register/register.component';
 import { ChartComponent } from './components/chart/chart.component';
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { ChartComponent } from './components/chart/chart.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ChartsModule
+    ChartsModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

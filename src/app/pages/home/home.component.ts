@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import { Label } from 'ng2-charts';
 import {ORDERS} from '../../datas/mock-orders';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,12 +11,19 @@ import {ORDERS} from '../../datas/mock-orders';
 })
 export class HomeComponent implements OnInit {
   orders = ORDERS;
+  public user: any;
 
-  constructor() {
-    console.log(this.orders);
+  constructor(private router: Router) {
   }
 
   ngOnInit(): void {
+    console.log('coucou')
+    if (localStorage.getItem('userInfo') == null){
+      this.router.navigate(['/login']);
+    } else {
+      this.user = JSON.parse(localStorage.getItem('userInfo'));
+      console.log(this.user);
+    }
   }
 
 }
