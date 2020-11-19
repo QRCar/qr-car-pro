@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {changeDateToMoment, changeMomentToDate, dateIsToday, dateIsYesterday, dateIsBefore6Months} from '../../utils/dates_contantes'
+import {changeDateToMoment, changeMomentToDate, dateIsToday, dateIsYesterday, dateIsBefore6Months} from '../../utils/date_contantes'
 import * as R from 'ramda';
 
 @Component({

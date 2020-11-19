@@ -30,7 +30,7 @@
             <hr> <!-- séparation -->
 
             <div class="sidebar-bottom-menu"> <!-- déconnexion -->
-                <a routerLink="/login" class="sidebar-disconnect">
+                <a routerLink="/login" class="sidebar-disconnect" (click)="deleteUserInfo()">
                     <img src="../assets/img/icon-logout.png" alt="icon" class="sidebar-disconnect-icon"/>
                     <p>Déconnexion</p>
                 </a>
