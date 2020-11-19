@@ -1,4 +1,31 @@
+@import "~src/variables";
+
 .container-amount{
-  height: 20px;
-  width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex:1;
+
+  .amont-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    flex: 1;
+    width: 24vw;
+    height: 30vh;
+
+    h6{
+      font-size: 14px;
+      color: $darkgrey;
+    }
+
+    p {
+      line-height: 25vh;
+      text-align: center;
+      vertical-align: middle;
+
+      font-size: 56px;
+      color: $darkgrey;
+    }
+  } 
 }

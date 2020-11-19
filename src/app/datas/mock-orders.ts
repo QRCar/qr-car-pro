@@ -12,6 +12,6 @@ export const ORDERS: IAmountTotal[] = [
   },
   {
     title: 'Revenus ce mois-ci',
-    amount: '75,87'
+    amount: '2 434,72'
   }
 ];

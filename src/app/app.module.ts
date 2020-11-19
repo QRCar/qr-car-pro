@@ -15,6 +15,7 @@ import { TableComponent } from './components/table/table.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { RegisterComponent } from './pages/authentication/register/register.component';
 import { ChartComponent } from './components/chart/chart.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ChartComponent } from './components/chart/chart.component';
     ChartComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     ChartsModule
