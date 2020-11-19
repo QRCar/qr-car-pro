@@ -7,13 +7,13 @@
       <a routerLink="/" class="link">nos conditions</a> ainsi que notre
       <a routerLink="/" class="link">politique de confidentialité</a>
     </p>
-    <button type="submit">Se connecter</button>
   </form>-->
   <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
     <input type="email" name="email" ngModel required #first="ngModel">
     <input type="password" name="mot de passe" ngModel>
-    <button>Submit</button>
+    <button>Se connecter</button>
   </form>
   <a class="link" routerLink="/" routerLinkActive="active"
     >Mot de passe oublié ?</a>
 </div>
+
