@@ -6,9 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./amount-total.component.scss']
 })
 export class AmountTotalComponent implements OnInit {
-  @Input() name : String;
-  @Input() amount : Number;
-  
+  @Input() items: object;
 
   constructor() { }
 

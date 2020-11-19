@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import { Label } from 'ng2-charts';
+import {ORDERS} from '../../datas/mock-orders';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,11 @@ import { Label } from 'ng2-charts';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  constructor() { }
+  orders = ORDERS;
+
+  constructor() {
+    console.log(this.orders);
+  }
 
   ngOnInit(): void {
   }
