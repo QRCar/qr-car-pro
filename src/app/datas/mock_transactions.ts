@@ -400,5 +400,54 @@ export const TRANSACTIONS: ITransaction[] = [
  immat: 'HK-129-IF',
  scan: 56,
  price: 29.21
-}
+},
+{
+    date: '19/11/2020',
+    firstname: 'Franny',
+    lastname: 'Truscott',
+    immat: 'TY-140-KQ',
+    scan: 8,
+    price: 25.87
+   },
+   {
+    date: '20/11/2020',
+    firstname: 'Linnet',
+    lastname: 'Michell',
+    immat: 'YB-162-VG',
+    scan: 99,
+    price: 30.09
+   },
+   {
+    date: '19/11/2020',
+    firstname: 'Barbi',
+    lastname: 'Cummungs',
+    immat: 'XF-481-IR',
+    scan: 54,
+    price: 3.79
+   },
+   {
+    date: '20/11/2020',
+    firstname: 'Ced',
+    lastname: 'Labroue',
+    immat: 'QU-057-VA',
+    scan: 52,
+    price: 36.6
+   },
+   {
+    date: '19/10/2019',
+    firstname: 'Franny',
+    lastname: 'Truscott',
+    immat: 'TY-140-KQ',
+    scan: 8,
+    price: 25.87
+   },
+   {
+    date: '19/11/2020',
+    firstname: 'Linnet',
+    lastname: 'Michell',
+    immat: 'YB-162-VG',
+    scan: 99,
+    price: 30.09
+   },
+
 ];

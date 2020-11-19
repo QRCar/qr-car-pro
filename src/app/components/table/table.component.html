@@ -1,21 +1,39 @@
 <div class="content-table">
-  <div class="fill-table flex-row">
-    <p>{{ currentDate }}</p>
-    <hr />
-  </div>
   <table>
     <tr>
-      <th>Date</th>
-      <th>Identity</th>
-      <th>Plaque</th>
-      <th>Scanner</th>
-      <th>Montant</th>
+      <td class="fill-table">
+        <p><strong>Aujourd'hui</strong></p>
+        <hr />
+      </td>
     </tr>
-    <tr *ngFor="let item of items">
+    <tr *ngFor="let item of listDateToday">
       <td>{{ item.date }}</td>
       <td>{{ item.firstname }} {{ item.lastname | uppercase }}</td>
       <td>{{ item.immat }}</td>
-      <td>n°{{ item.scan }}</td>
+      <td>{{ item.price }}€</td>
+    </tr>
+    <tr>
+      <td class="fill-table">
+        <p><strong>Hier</strong></p>
+        <hr />
+      </td>
+    </tr>
+    <tr *ngFor="let item of listDateYesterday">
+      <td>{{ item.date }}</td>
+      <td>{{ item.firstname }} {{ item.lastname | uppercase }}</td>
+      <td>{{ item.immat }}</td>
+      <td>{{ item.price }}€</td>
+    </tr>
+    <tr>
+      <td class="fill-table">
+        <p><strong>Les six derniers mois</strong></p>
+        <hr />
+      </td>
+    </tr>
+    <tr *ngFor="let item of listDateSixMonth">
+      <td>{{ item.date }}</td>
+      <td>{{ item.firstname }} {{ item.lastname | uppercase }}</td>
+      <td>{{ item.immat }}</td>
       <td>{{ item.price }}€</td>
     </tr>
   </table>

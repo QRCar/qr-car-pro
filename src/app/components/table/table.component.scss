@@ -1,25 +1,19 @@
 @import '~src/variables';
 .content-table {
-
-  .fill-table {
-  margin: 20px 0;
-
-    p {
-      margin: 0 30px;
-    }
-    hr {
-      width: 60vw;
-      margin-left: 10px;
-      border: 1px solid $lightgrey;
-    }
-  }
-
   table {
     // padding: 30px;
 
     td {
       width: auto;
       padding: 10px 35px;
+
+      p {
+        color: #a476ef;
+
+        hr {
+          border: 1px solid #a476ef;
+        }
+      }
 
       &:first-child {
         color: $lightgrey;
@@ -32,8 +26,8 @@
         font-weight: bold;
       }
 
-      &:nth-child(3){
-        border : 1px solid $darkgrey;
+      &:nth-child(3) {
+        border: 1px solid $darkgrey;
         border-radius: 6px;
       }
     }
