@@ -14,6 +14,7 @@ import { AmountTotalComponent } from './components/amount-total/amount-total.com
 import { TableComponent } from './components/table/table.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { RegisterComponent } from './pages/authentication/register/register.component';
+import { ChartComponent } from './chart/chart.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { RegisterComponent } from './pages/authentication/register/register.comp
     AmountTotalComponent,
     TableComponent,
     MenuComponent,
-    RegisterComponent
+    RegisterComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,

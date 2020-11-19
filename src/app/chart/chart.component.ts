@@ -3,11 +3,11 @@ import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import { Label } from 'ng2-charts';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-chart',
+  templateUrl: './chart.component.html',
+  styleUrls: ['./chart.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class ChartComponent implements OnInit {
 
   public barChartOptions: ChartOptions = {
     responsive: true,
