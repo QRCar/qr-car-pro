@@ -1,0 +1,44 @@
+@import "~src/variables";
+
+.menu {
+    display : flex;
+    flex-direction: column;
+    justify-content: start;
+
+    .menu-category {
+        display : flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+
+        height: 56px;
+        // background-color: $lightgrey;
+
+        img {
+            margin-left: 12px;
+            width: 24px;
+            height: 24px;
+        }
+
+        p {
+            margin-left: 20px;
+            font-size: 15px;
+            color: $darkgrey;
+        }
+    }
+}
+
+.active{
+    background-color: rgba(255,255,255, .3);
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover{
+        background-color: rgba(255,255,255, .5);
+        border-radius: 5px;
+    }
+}
+

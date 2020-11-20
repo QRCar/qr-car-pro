@@ -1,0 +1,40 @@
+<div class="sidebar">
+    <div class="sidebar-logo"> <!-- logo -->
+        <img src="../assets/img/logo.png" alt="QRCar" class="logo"/>
+    </div>
+
+    <div class="sidebar-content">
+        <div> <!-- contenu aligné en haut -->
+            <div class="sidebar-session"> <!-- session -->
+                <div class="sidebar-user"> <!-- utilisateur -->
+                    <img src="../assets/img/icon-user.png" alt="User" class="sidebar-user-icon"/><!-- icone -->
+                    <div class="sidebar-username"><!-- nom -->
+                        <p>{{userInfo.last_name}}</p>
+                        <p>{{userInfo.first_name}}</p>
+                    </div>
+                </div>
+                <div class="sidebar-organization"><!-- organisation -->
+                    <p>Organisation EPSI Nantes</p>
+                </div>
+            </div>
+
+
+            <hr>
+
+            <div class="sidebar-main-menu"> <!-- menu principal -->
+                <app-menu></app-menu>
+            </div>
+        </div>
+
+        <div> <!-- contenu aligné en bas -->
+            <hr> <!-- séparation -->
+
+            <div class="sidebar-bottom-menu"> <!-- déconnexion -->
+                <a routerLink="/login" class="sidebar-disconnect" (click)="deleteUserInfo()">
+                    <img src="../assets/img/icon-logout.png" alt="icon" class="sidebar-disconnect-icon"/>
+                    <p>Déconnexion</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

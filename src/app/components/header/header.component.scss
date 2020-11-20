@@ -1,0 +1,19 @@
+@import '~src/variables';
+
+h1 {
+  color: $lightpurple;
+  text-align: center;
+  margin-bottom: 50px;
+
+  span {
+    font-size: 14px;
+  }
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 150px;
+}

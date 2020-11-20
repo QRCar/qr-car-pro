@@ -1,0 +1,137 @@
+@import "~src/variables";
+
+.sidebar {
+    display : flex;
+    flex-direction: column;
+
+    width: 350px;
+    min-height: 100vh;
+    height: auto;
+    background-color: $lightpurple;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .sidebar-logo {
+        display : flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: $lightgrey;
+        height: 250px;
+    
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .sidebar-content{
+        display : flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        flex: 1;
+    
+        margin: 16px;
+
+        div {
+            width: 100%;
+        }
+    }
+}
+
+hr {
+    display: flex;
+    flex-direction: column;
+
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 18px;
+    padding: 0;
+    height: 2px;
+    border: 0;
+    border-radius: 1px;
+    background-color: $white;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover{
+        background-color: rgba(255,255,255, .5);
+    }
+}
+
+// Session
+.sidebar-session {
+    display : flex;
+    flex-direction: column;
+
+    .sidebar-user {
+        display : flex;
+        flex-direction: row;
+        
+        margin-bottom: 12px;
+
+        .sidebar-user-icon {
+            width: 72px;
+            height: 72px;
+            
+        }
+        
+        .sidebar-username {
+            display : flex;
+            flex-direction: column;
+            justify-content: space-around;
+        
+            margin-left: 16px;
+        
+            p{
+                font-size: 26px;
+                color: $darkgrey;
+            }
+        }
+    }
+
+    .sidebar-organization {
+        p{
+            font-size: 15px;
+            color: $lightgrey;
+        }
+    }
+}
+
+// Main menu 
+.sidebar-main-menu {
+    width: 100%;
+}
+
+// Bottom menu 
+.sidebar-bottom-menu {
+    width: 100%;
+
+    .sidebar-disconnect {
+        display : flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+
+        height: 56px;
+        margin: 0;
+        
+
+        img {
+            margin-left: 12px;
+            width: 24px;
+            height: 24px;
+        }
+
+        p {
+            margin-left: 20px;
+            font-size: 15px;
+            color: $darkgrey;
+        }
+    }
+}

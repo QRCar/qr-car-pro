@@ -1,0 +1,25 @@
+<div class="container-home flex-row">
+  <div>
+    <app-sidebar [userInfo]="user"></app-sidebar>
+  </div>
+  <div class="content">
+    <div class="dashboard-row">
+      <div class="dashboard-cell">
+        <app-amount-total [items]="orders"></app-amount-total>
+      </div>
+    </div>
+    <div class="dashboard-row">
+      <div class="dashboard-cell">
+        <h6>Revenu par jour</h6>
+        <app-chart></app-chart>
+      </div>
+    </div>
+    <div class="dashboard-row">
+      <div class="dashboard-cell">
+        <h6>Nombre de transactions par jour</h6>
+        <app-chart-amount></app-chart-amount>
+      </div>
+    </div>
+
+  </div>
+</div>
