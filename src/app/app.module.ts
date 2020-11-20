@@ -17,6 +17,7 @@ import { RegisterComponent } from './pages/authentication/register/register.comp
 import { ChartComponent } from './components/chart/chart.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { ChartAmountComponent } from './components/chart-amount/chart-amount.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {HttpClientModule} from '@angular/common/http';
     TableComponent,
     MenuComponent,
     RegisterComponent,
-    ChartComponent
+    ChartComponent,
+    ChartAmountComponent
   ],
   imports: [
     BrowserModule,

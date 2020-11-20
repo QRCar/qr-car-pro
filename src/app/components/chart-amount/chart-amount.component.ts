@@ -3,11 +3,11 @@ import { ChartOptions, ChartType, ChartDataSets, ChartScales } from 'chart.js';
 import { Label, Color,} from 'ng2-charts';
 
 @Component({
-  selector: 'app-chart',
-  templateUrl: './chart.component.html',
-  styleUrls: ['./chart.component.scss']
+  selector: 'app-chart-amount',
+  templateUrl: './chart-amount.component.html',
+  styleUrls: ['./chart-amount.component.scss']
 })
-export class ChartComponent implements OnInit {
+export class ChartAmountComponent implements OnInit {
 
   public barChartOptions: ChartOptions = {
     responsive: true,
@@ -47,7 +47,7 @@ export class ChartComponent implements OnInit {
   ]
 
   public barChartData: ChartDataSets[] = [
-    { data: [ 508, 124, 328, 156, 80, 249, 167, 508,167, 508, 124, 328, 156, 80, 249, 1859,  124, 328, 156, 80, 75, 328, 156, 80, 249, ], label: 'Series A' }
+    { data: [328, 156, 80, 249, 167, 508, 124, 328, 156, 80, 249, 167, 508, 124, 328, 156, 80, 249, 167, 508, 124, 328, 156, 80, 75], label: 'Series A' }
   ];
 
   constructor() { }
@@ -55,4 +55,6 @@ export class ChartComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
 }
+
