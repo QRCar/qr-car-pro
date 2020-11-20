@@ -26,7 +26,7 @@ export class ChartComponent implements OnInit {
     },
   };
 
-  public barChartLabels: Label[] = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
+  public barChartLabels: Label[] = ['27 oct.', '28 oct.', '29 oct.', '30 oct.','31 oct.', '1 nov.', '2 nov.', '3 nov.', '4 nov.', '5 nov.', '6 nov.','7 nov.', '8 nov.', '9 nov.', '10 nov.', '11 nov.', '12 nov.', '13 nov.','14 nov.', '15 nov.', '16 nov.', '17 nov.', '18 nov.', '19 nov.', '20 nov.'];
   public barChartType: ChartType = 'bar';
   public barChartLegend = false;
   public barChartPlugins = [];
@@ -47,7 +47,7 @@ export class ChartComponent implements OnInit {
   ]
 
   public barChartData: ChartDataSets[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' }
+    { data: [328, 156, 80, 249, 167, 508, 124, 328, 156, 80, 249, 167, 508, 124, 328, 156, 80, 249, 167, 508, 124, 328, 156, 80, 75], label: 'Series A' }
   ];
 
   constructor() { }
